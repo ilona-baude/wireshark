@@ -67,7 +67,11 @@ iii - LAN
   b- analyse des fichiers
   - mDNS
   - FTP
+    ![shark 6](https://github.com/user-attachments/assets/320b210e-ee1d-434f-8d94-5eac9ea70be2)
+
   - SMB
+    ![shark 7](https://github.com/user-attachments/assets/9aa7b38a-b89f-487c-8d99-ff2254d65685)
+
   - HTTPS
   - TLSv1.2
   
@@ -76,4 +80,14 @@ iv - tshark
 
   a- script
   
+  tshark -D #pour lister les interfaces
+  
+  tshark -i "interface" -c "nb de paquet à capturer" -f "filtre"
+
+  ![tshark 2](https://github.com/user-attachments/assets/69b0d831-0d98-4677-aa48-594b2157f5d8)
+
+  
   b- test
+
+  ![tshark 1](https://github.com/user-attachments/assets/b670c581-6455-4fdb-ab9f-280eeda82c0c)
+
