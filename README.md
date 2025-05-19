@@ -51,10 +51,13 @@ Le protocole UDP peut aussi être utilisé pour :
 
 TCP : Transmission Control Protocol
 
-  =>
+  => un protocole orienté connexion, qui vérifie la connexion entre l'hôte et le destinataire via la méthode de "Three Way Handshake" identifiable par les protocoles TCP SYNC, ACK et FIN. L'hôte source va créer une session de connexion avec l'hôte distant afin de le prévenir qu'il va recevoir des données.Une fois que la connexion est établie, l'échange de  données peut commencer. Pendant cet échange de données, les paquets (correspondants aux données) sont envoyés dans l'ordre, et le protocole TCP va s'assurer que tous les paquets sont bien transmis, et si ce n'est pas le cas, il est capable de renvoyer les paquets manquants. C'est l'un des avantages du protocole TCP.
+Cette connexion sera maintenue jusqu'à ce qu'elle soit fermée, ce qui signifie qu'elle sera active à minima jusqu'à la fin de l'échange de données entre les deux hôtes. Elle peut être maintenue afin d'être prête dès que les deux hôtes auront besoin de communiquer ensemble.
   
   
   b- schéma connexion 
+
+![shark 5](https://github.com/user-attachments/assets/7e2b72c9-9ad8-45f8-869d-ac313c4a8ec7)
 
   
 iii - LAN 
@@ -62,6 +65,11 @@ iii - LAN
   a- capture de paquets 
   
   b- analyse des fichiers
+  - mDNS
+  - FTP
+  - SMB
+  - HTTPS
+  - TLSv1.2
   
   
 iv - tshark 
