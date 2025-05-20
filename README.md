@@ -63,17 +63,27 @@ Cette connexion sera maintenue jusqu'à ce qu'elle soit fermée, ce qui signifie
 iii - LAN 
   
   a- capture de paquets 
+   ![shark 6](https://github.com/user-attachments/assets/320b210e-ee1d-434f-8d94-5eac9ea70be2)
+   
+   ![shark 7](https://github.com/user-attachments/assets/9aa7b38a-b89f-487c-8d99-ff2254d65685)
   
   b- analyse des fichiers
-  - mDNS
+  - mDNS : Multicast DNS
+    -> un service conçu pour aider à la résolution de noms dans les petits réseaux. A la différence du protocole DNS qui sollicite un serveur de nom
+    le protocole mDNS adresse directement tout les participants du réseau. Le client correspondant envoie un multicast dans le réseau et demande à quel participant du réseau le nom d’hôte correspond. Le multicast est une forme de communication spécifique dans laquelle un seul message est adressé à un groupe de destinataires. Le groupe peut par exemple être constitué de l’ensemble du réseau ou d’un sous-réseau.
+
+    De cette façon, la requête est également envoyée au membre du groupe qui possède le nom d’hôte recherché. Il répond alors à l’ensemble du réseau également via le Multicast. De cette façon, tous les participants sont informés de la connexion entre le nom et l’adresse IP et peuvent effectuer une entrée correspondante dans leur cache mDNS. Ainsi, tant que cette entrée est valable, personne dans le réseau n’a besoin de demander ce nom d’hôte.
+
+    Le Multicast DNS génère un trafic relativement important, mais il permet d’économiser activement les ressources du réseau
   - FTP
-    ![shark 6](https://github.com/user-attachments/assets/320b210e-ee1d-434f-8d94-5eac9ea70be2)
+    
 
   - SMB
-    ![shark 7](https://github.com/user-attachments/assets/9aa7b38a-b89f-487c-8d99-ff2254d65685)
+    
 
   - HTTPS
-  - TLSv1.2
+  - TLSv1.2 : Transport Layer Security
+    -> un protocole de sécurité largement adopté et conçu pour faciliter la confidentialité et la sécurité des données sur les communications Internet. Il est principalement utilisé pour chiffrer la communication entre les applications web et les serveurs, comme les navigateurs web chargeant un site web, par exemple. Le TLS également être utilisé pour chiffrer d'autres communications, comme les e-mails, les services de messagerie et la voix sur IP (VoIP).
   
   
 iv - tshark 
