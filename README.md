@@ -81,12 +81,17 @@ iii - LAN
 
     - Un canal de contrôle qui sert à l'authentification, à l'envoi des commandes FTP ou encore à la navigation dans l'arborescence du serveur FTP
     - Un canal de données qui sert tout simplement au transfert des données, que ce soit pour envoyer ou recevoir
+   
+    Le protocol FTP en lui-même n'est pas sécurisé ou crypté donc pour protéger ses données d'authentification et les fichiers échanger
+    il faut rajouter un protocole de sécurité par dessus tel que le SSL/TLS ou SSH par example qui permttra de crypté les données du serveur de fichier et dans ce cas on parle de protocole FTPS ou SFTP
 
 
-  - SMB
+  - SMB : Serveur Message Block
+    
+    -> un protocole client-serveur qui permet d'accéder à des ressources via le réseau, et particulièrement l'accès à des fichiers et des dossiers. Il existe plusieurs version du protocole SMB, la plus récente étant SMB v3.1. Si deux machines exploitent une version différente la plus ancienne sera utilisé pour communiquer. SMB v1 n'est plus pris en charge et est obsolète et déprécié depuis 2014 et il est déconseiller de l'utiliser à cause d'une faille trouver en 2017, EternalBlue - CVE-2017-0144 qui a nottement été exploité par des ransomwares ravageurs comme WannaCry. 
     
 
-  - HTTPS
+  - HTTPS : 
   - TLSv1.2 : Transport Layer Security
     -> un protocole de sécurité largement adopté et conçu pour faciliter la confidentialité et la sécurité des données sur les communications Internet. Il est principalement utilisé pour chiffrer la communication entre les applications web et les serveurs, comme les navigateurs web chargeant un site web, par exemple. Le TLS également être utilisé pour chiffrer d'autres communications, comme les e-mails, les services de messagerie et la voix sur IP (VoIP).
   
