@@ -69,6 +69,7 @@ iii - LAN
   
   b- analyse des fichiers
   - mDNS : Multicast DNS
+
     -> un service conçu pour aider à la résolution de noms dans les petits réseaux. A la différence du protocole DNS qui sollicite un serveur de nom
     le protocole mDNS adresse directement tout les participants du réseau. Le client correspondant envoie un multicast dans le réseau et demande à quel participant du réseau le nom d’hôte correspond. Le multicast est une forme de communication spécifique dans laquelle un seul message est adressé à un groupe de destinataires. Le groupe peut par exemple être constitué de l’ensemble du réseau ou d’un sous-réseau.
 
@@ -76,6 +77,7 @@ iii - LAN
 
     Le Multicast DNS génère un trafic relativement important, mais il permet d’économiser activement les ressources du réseau
   - FTP : File Transfer Protocol
+
     -> un protocole de transfert de fichiers qui permet d'envoyer et recevoir des fichiers et qui fonctionne sur le mode client/serveur. Un client FTP va établir une connexion TCP avec un serveur FTP dans le but d'échanger des données.
     Cette connexion s'appuie sur deux canaux différents :
 
@@ -91,8 +93,11 @@ iii - LAN
     -> un protocole client-serveur qui permet d'accéder à des ressources via le réseau, et particulièrement l'accès à des fichiers et des dossiers. Il existe plusieurs version du protocole SMB, la plus récente étant SMB v3.1. Si deux machines exploitent une version différente la plus ancienne sera utilisé pour communiquer. SMB v1 n'est plus pris en charge et est obsolète et déprécié depuis 2014 et il est déconseiller de l'utiliser à cause d'une faille trouver en 2017, EternalBlue - CVE-2017-0144 qui a nottement été exploité par des ransomwares ravageurs comme WannaCry. 
     
 
-  - HTTPS : 
+  - HTTPS : Hypertext Transfer Protocol Secure
+
+    ->  la version sécurisée du protocole HTTP, principal protocole utilisé pour l’envoi de données entre un navigateur Web et un site Web. HTTPS est chiffré afin de renforcer la sécurité du transfert de données. HTTPS est le protocole HTTP avec une surcouche TLS pour la protection des données.
   - TLSv1.2 : Transport Layer Security
+
     -> un protocole de sécurité largement adopté et conçu pour faciliter la confidentialité et la sécurité des données sur les communications Internet. Il est principalement utilisé pour chiffrer la communication entre les applications web et les serveurs, comme les navigateurs web chargeant un site web, par exemple. Le TLS également être utilisé pour chiffrer d'autres communications, comme les e-mails, les services de messagerie et la voix sur IP (VoIP).
   
   
