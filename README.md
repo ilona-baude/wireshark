@@ -75,8 +75,13 @@ iii - LAN
     De cette façon, la requête est également envoyée au membre du groupe qui possède le nom d’hôte recherché. Il répond alors à l’ensemble du réseau également via le Multicast. De cette façon, tous les participants sont informés de la connexion entre le nom et l’adresse IP et peuvent effectuer une entrée correspondante dans leur cache mDNS. Ainsi, tant que cette entrée est valable, personne dans le réseau n’a besoin de demander ce nom d’hôte.
 
     Le Multicast DNS génère un trafic relativement important, mais il permet d’économiser activement les ressources du réseau
-  - FTP
-    
+  - FTP : File Transfer Protocol
+    -> un protocole de transfert de fichiers qui permet d'envoyer et recevoir des fichiers et qui fonctionne sur le mode client/serveur. Un client FTP va établir une connexion TCP avec un serveur FTP dans le but d'échanger des données.
+    Cette connexion s'appuie sur deux canaux différents :
+
+    - Un canal de contrôle qui sert à l'authentification, à l'envoi des commandes FTP ou encore à la navigation dans l'arborescence du serveur FTP
+    - Un canal de données qui sert tout simplement au transfert des données, que ce soit pour envoyer ou recevoir
+
 
   - SMB
     
